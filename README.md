@@ -502,14 +502,141 @@ Copy this and paste it again on the message, and replace the message which we ha
 ![image](https://github.com/user-attachments/assets/decafa67-bede-4326-8276-e49b04643fef)
 
 Now we test it again.
+
 Move to Slack.
+
 Updated message will appear.
+
 This time the details have descriptions. So that everyone can understand.
 ![image](https://github.com/user-attachments/assets/4c5ce8b2-0ba2-44a0-bd61-33d10dac9276)
 
 </br>
 </br>
 </br>
+
+**Setting the email**
+Now we need to send a **email** with these informations.
+Click on the **email** we created on the storyboard.
+Copy the details we have on the notepad and paste the message to the **body** of the email
+Select the mail and press the **Test**
+![image](https://github.com/user-attachments/assets/6b86fa08-753f-4c33-bc65-d7d16c75e40c)
+
+Goto the **email** and check the mail.
+![image](https://github.com/user-attachments/assets/5368daa9-75b3-445c-93a0-1ac37c0f2adf)
+
+We got the mail, but the formatting is not good.
+
+So we open the html editor of the messages and make changes to break the line.
+![image](https://github.com/user-attachments/assets/fbb48fc7-64d1-43b2-8faf-e96b960d9ad7)
+
+And **test** the email again.
+And check the mail again.
+Now it looks good.
+![image](https://github.com/user-attachments/assets/47cc2866-577a-4058-9e14-af5652513eac)
+
+</br>
+</br>
+<br>
+
+**User Prompt**
+Now we have to work on our user prompt.
+Does the user want to isolate the pc.
+
+Select user prompt and edit page.
+![image](https://github.com/user-attachments/assets/617efddb-5abb-48b5-9510-f4f83980855c)
+
+Select Boolean an drag to the page.
+![image](https://github.com/user-attachments/assets/59092922-0e54-4609-b6b0-ebedb1a1e028)
+
+Click on visit page on the **user prompt**
+![image](https://github.com/user-attachments/assets/9b4759a3-3ce3-4b4b-b043-ef33d363dcba)
+
+If we click on **No** and submit.
+
+Now the user selects **no** *the computer was not isolated, please investigate* message was sent over to **Slack**
+We need to build our variable which in our case is computer name.
+Lets build that.
+Click **Trigger** and drag it to the storyboard.
+
+![image](https://github.com/user-attachments/assets/45dddb7f-d57c-4a10-8c52-fb6e83bb331d)
+
+Change the name to **No** and connect it to the page.
+
+Select **Rules** and click on **+** buttom
+Select User prompt > body > body > isolate
+
+![image](https://github.com/user-attachments/assets/a5bc2052-1cb5-435b-9f13-050bd53e17a0)
+
+The **result** on lowe left corner shows **false**
+If it does not show **false** test again the page you will view the option.
+Click outside of the box to close it.
+
+![image](https://github.com/user-attachments/assets/960e24c4-3ccb-4d01-bc6c-ada4ff96e393)
+
+Copy the **Slack message** from the storyboard and paste it on the storyboard to make a copy of it and edit the message.
+![image](https://github.com/user-attachments/assets/1c88a071-a2dc-48c0-b059-63822c718405)
+
+Connect the **Trigger** to the **Slack message.**
+
+Goto **user prompt** and test it
+Select **no** and press submit.
+
+![image](https://github.com/user-attachments/assets/576dbb34-74f4-496c-88b1-19f0a9e74b17)
+
+
+We goto **Slack** and see the message.
+The message is showen it **Slack** it means our connection is working properly.
+
+![image](https://github.com/user-attachments/assets/6808d57b-1c9a-4f02-b1a3-9cd9fbcd985c)
+
+Create another **Trigger**
+Re-run the test
+This time select **Yes** and submit.
+
+Click on event.
+Expand user prompt.
+Expand body.
+This time we have selected **Yes**, so the *do_yo_want_to_isolate:* is showing **true**
+![image](https://github.com/user-attachments/assets/2e1a477a-1041-43ce-a3ed-b4eab08b7017)
+
+Connect the **Trigger** to the **User Prompt**
+![image](https://github.com/user-attachments/assets/2cced159-ad60-475e-ad32-a061b61cfd29)
+
+
+Goto template and select **LimaCharlie** and drag it to storyboard.
+
+Now the question is How will **LimaCharlie** will know which machine to isolate.
+
+Search **Isolate Sensor**
+
+Add the path of the **sid** in the URL section.
+
+![image](https://github.com/user-attachments/assets/af7620a4-eaa7-44c4-b795-507c015b0f9d)
+
+The result shows **null**, so we need to re-run the playbook while being connected to the new application.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
