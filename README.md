@@ -51,7 +51,8 @@ While EDR excels at monitoring and securing endpoints, SOAR provides the orchest
 ## Workflow
 </br>
 
-![image](https://github.com/user-attachments/assets/9b6c295c-7c11-4bb9-834d-37c1b8b035a2)
+![image](https://github.com/user-attachments/assets/97f52ddd-7900-483e-ae61-4415e3a45871)
+
 </br>
 
 This is the basic workflow which we will be working in this project<
@@ -264,6 +265,7 @@ Copy the event by clicking on copy event
 ![image](https://github.com/user-attachments/assets/bca7845e-75b0-4a45-b589-5fdeece72495)
 
 Scroll down and goto target event
+
 <img width="569" alt="image" src="https://github.com/user-attachments/assets/fdf7196a-6936-424d-87d0-c7d8cd568ba0">
 
 Paste the copied event, and click on test event.
@@ -273,17 +275,8 @@ Goto detection.
 Here we can see our events generated.
 ![image](https://github.com/user-attachments/assets/ad847bad-3818-45b4-8a82-ceab3c900c68)
 
-
-
-
-
-
-  
-
-
-
-
-
+</br>
+</br>
 
 ## Objective 3: Setting up Tines and Slack
 1. Setup **Tine** and **Slack.**
@@ -365,14 +358,22 @@ Our configuration is complete.
 - Click on **Events**
 ![image](https://github.com/user-attachments/assets/29618191-b5f6-43da-ade3-8cb0e521f66b)
 
--Select the recent event and expand the body. We have our detection exactly one to one as **LimaCharlie**
+Select the recent event and expand the body. We have our detection exactly one to one as **LimaCharlie**
 
 ![image](https://github.com/user-attachments/assets/4103088f-07b1-409e-b7f2-ddc41bdb975f)
 
+</br>
+</br>
 
+## Objective 4: Creating a **Playbook** and its **Automation**
 
+**Playbook Objective**
+- Send a message to **Slack**
+- Send a **email**
+  (**email** will contain information about the detection that the LimaCharlie has generated)
 
+- Generate a prompt:
+  It will contain a message **Isolate the machine(yes/no)**
+  If we select **yes** then **LimaCharlie** should automatically isolate the machine.
 
-
-
-
+  
