@@ -142,7 +142,7 @@ Click it to see more details
  ![image](https://github.com/user-attachments/assets/c4ccb573-927b-4ab2-af41-6b699d15a565)
 </br>
 </br>
-
+</br>
 
 ## Objective 2: Writing rules for LimaCharlie
 1. Generate telemetryon host machine using **lazagne**
@@ -203,8 +203,11 @@ As it is just to specify the blocks.
 ![image](https://github.com/user-attachments/assets/3d3d290a-7b2c-4f86-b121-7fcaabdd37ae)
 
 Here:
+
 **event:** specifies the event type, this process will only trigger if there is a new process or existing process.
+
 **op:** specifies operator type here. 
+
 It means the event type must be new process or existing process.
 rules is going to the criteria this means we must follow the rules.
 Op: is windows
@@ -275,6 +278,7 @@ Goto detection.
 Here we can see our events generated.
 ![image](https://github.com/user-attachments/assets/ad847bad-3818-45b4-8a82-ceab3c900c68)
 
+</br>
 </br>
 </br>
 
@@ -422,10 +426,12 @@ On **Slack**
 Move to **Tines**
 And paste the **Channel/User ID**
 ![image](https://github.com/user-attachments/assets/bd6bdc27-4eff-47d1-9fdd-65057fe9ef54)
+
 And type the message you want to send.
 
 Now connect the **Webhook** to **Slack**
 And click on **Test**
+
 ![image](https://github.com/user-attachments/assets/06c530e8-b1aa-4b07-be75-0909093ddf40)
 
 Now got to **Slack** and see the message
@@ -433,7 +439,9 @@ Now got to **Slack** and see the message
 
 The message is visible in **Slack**
 Now we are sure that **Tines** can communicate with **Slack.**
-
+</br>
+</br>
+</br>
 Now we need to send a **email.**
 Select **email** and drag it to the storyboard.
 
@@ -447,6 +455,61 @@ Click on **Test**
 
 Goto mail and check the mail.
 ![image](https://github.com/user-attachments/assets/6392bf69-1a13-4f39-86d0-99c340d8400d)
+</br>
+</br>
+</br>
+Now we have to create a **Prompt** as per our workflow.
+For **Prompt** we can use **page** which is under tools.
+Drag **page** to the storyboard.
+![image](https://github.com/user-attachments/assets/2ce74cb9-0705-4e00-9152-90189c35d8a1)
+
+
+Click on **Edit page.**
+Lets include the details into the our messages.
+For interesting fields we will goto our **Webhook.**
+And expand detection > body
+
+![image](https://github.com/user-attachments/assets/0a309b6f-b297-44cb-8dc3-7f26c2729724)
+
+Open notepad.
+Copy and paste the interesting fields.
+
+![image](https://github.com/user-attachments/assets/a045044f-8a4a-4afc-9914-28bc78606fa6)
+</br>
+</br>
+Rearrange the fields according to needs.
+
+Copy the data and paste it on the message.
+</br>
+![image](https://github.com/user-attachments/assets/7fdb466b-1a5e-4691-84ba-adafa387c43e)
+
+Select the **page** and click on **Test**
+
+**Move to Slack**
+We can see the message with all the details included.
+
+![image](https://github.com/user-attachments/assets/b2d37935-4657-456f-8cc2-a556bf256269)
+
+These details are only know to us, but it is not know to others, so lets make it more user friendly.
+
+So we go to our **notepad** again and add the description before the links.
+
+![image](https://github.com/user-attachments/assets/54b3f31a-33d1-4801-ab2c-b406d311f1fa)
+
+
+Copy this and paste it again on the message, and replace the message which we had earlier.
+
+![image](https://github.com/user-attachments/assets/decafa67-bede-4326-8276-e49b04643fef)
+
+Now we test it again.
+Move to Slack.
+Updated message will appear.
+This time the details have descriptions. So that everyone can understand.
+![image](https://github.com/user-attachments/assets/4c5ce8b2-0ba2-44a0-bd61-33d10dac9276)
+
+</br>
+</br>
+</br>
 
 
 
