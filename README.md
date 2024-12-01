@@ -403,6 +403,59 @@ Click on Credentials and select Slack
 Click on **use tines app for slack.** and click on allow
 ![image](https://github.com/user-attachments/assets/ab777095-2f03-48cb-8595-1ef032380102)
 
+Goto templets and drag **Slack** into the storyboard.
+![image](https://github.com/user-attachments/assets/55b0c373-bf37-49e3-89ac-04eb3b97f9d1)
+
+On right side search for message.
+And select **send a message.**
+![image](https://github.com/user-attachments/assets/395a2055-4437-4b18-acbf-1340ec3f8509)
+
+
+On **Slack**
+- Goto **alert** channel, which we have created.
+- Right Click on channel and select **View channel details**
+![image](https://github.com/user-attachments/assets/24f93de0-5040-4312-8800-9483956251e0)
+
+- Scroll down and copy the **Channel ID**
+<img width="652" alt="image" src="https://github.com/user-attachments/assets/14ee0b6b-1916-496c-a907-d87e4de21d93">
+
+Move to **Tines**
+And paste the **Channel/User ID**
+![image](https://github.com/user-attachments/assets/bd6bdc27-4eff-47d1-9fdd-65057fe9ef54)
+And type the message you want to send.
+
+Now connect the **Webhook** to **Slack**
+And click on **Test**
+![image](https://github.com/user-attachments/assets/06c530e8-b1aa-4b07-be75-0909093ddf40)
+
+Now got to **Slack** and see the message
+![image](https://github.com/user-attachments/assets/42067678-b3f2-4c46-976d-60a183da5950)
+
+The message is visible in **Slack**
+Now we are sure that **Tines** can communicate with **Slack.**
+
+Now we need to send a **email.**
+Select **email** and drag it to the storyboard.
+
+![image](https://github.com/user-attachments/assets/2567ac72-0391-493d-946a-8d2815533e19)
+
+Connect the **Webhook** to **Send email.**
+For testing I will be using temp mail.
+Enter email in **Recipients** and **Reply to**
+Click on **Test**
+![image](https://github.com/user-attachments/assets/108c097c-78d2-465a-83fa-ffd97a65580f)
+
+Goto mail and check the mail.
+![image](https://github.com/user-attachments/assets/6392bf69-1a13-4f39-86d0-99c340d8400d)
+
+
+
+
+
+
+
+
+
 
 
 
