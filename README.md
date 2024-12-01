@@ -376,4 +376,35 @@ Select the recent event and expand the body. We have our detection exactly one t
   It will contain a message **Isolate the machine(yes/no)**
   If we select **yes** then **LimaCharlie** should automatically isolate the machine.
 
+  In the workflow
+  ![image](https://github.com/user-attachments/assets/92ff2912-0c49-4ff6-9c05-33e1b8f114e2)
+
+We have the infected host with the detect hack tool that **LimaCharlie** has detected.
+Which is pushed to **Tines.**
+**Tines** is going to send a message to **Slack.** This means there should be a link between **Tines** and **Slack.**
+
+
+To create a link between **Tines** and **Slack**
+Goto **Slack** and look at the applications there.
+More > Automation > Search **Tines**
+![image](https://github.com/user-attachments/assets/d9d95fb8-e93f-444a-aed3-080845444345)
+
+Click on add
+![image](https://github.com/user-attachments/assets/687bca2c-2c70-4dfc-872e-dc0a1baafc5c)
+
+Follow the steps mentioned.
+![image](https://github.com/user-attachments/assets/b3e4ac0c-b592-4981-8276-715416ef0383)
+
+
+On **Tines**
+Click on Credentials and select Slack
+![image](https://github.com/user-attachments/assets/ed09142d-9c6e-4e93-8cb6-6fb7e61f84b8)
+
+Click on **use tines app for slack.** and click on allow
+![image](https://github.com/user-attachments/assets/ab777095-2f03-48cb-8595-1ef032380102)
+
+
+
+
+
   
