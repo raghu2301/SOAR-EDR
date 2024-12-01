@@ -218,6 +218,18 @@ There are lot of option like events, detection, deployment etc.
 
 Our configuration is complete.
 
+**Move to Tines**
+- Select **Webhook**
+- Click on **Events**
+![image](https://github.com/user-attachments/assets/29618191-b5f6-43da-ade3-8cb0e521f66b)
+
+-Select the recent event and expand the body. We have our detection exactly one to one as **LimaCharlie**
+
+![image](https://github.com/user-attachments/assets/4103088f-07b1-409e-b7f2-ddc41bdb975f)
+
+
+
+
 
 
 
