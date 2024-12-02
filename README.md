@@ -617,6 +617,92 @@ The result shows **null**, so we need to re-run the playbook while being connect
 
 
 
+Goto ***webhook** events and re-emit.
+
+Goto **User Prompt** and select **yes** and submit.
+We can see the error on **Isolate Sensor** we did not do any configuration other than changing the url.
+
+![image](https://github.com/user-attachments/assets/d344bc72-719d-43b3-b42f-bd1fb5142054)
+
+Now if we click on the link we can see our sensor id  as a result at the bottom.
+
+![image](https://github.com/user-attachments/assets/6b8252d8-fa7a-4766-9ee8-3cd9f785912e)
+
+Authorization is looking for credentials that means we need to authenticate **LimaCharlie**
+
+![image](https://github.com/user-attachments/assets/785a030c-e213-451a-bb32-f6aae82cd2f9)
+
+**For Credentials Authorization**
+Open **Tines** in new tab.
+Click on credentials.
+Click on **New.**
+Search for **LimaCharlie.**
+![image](https://github.com/user-attachments/assets/61e80cf9-76c0-4399-bf42-86aa86053527)
+
+Since **LimaCharlie** is not present here.
+We need to goto the **LimaCharlie**
+Click on **Access Management** and select **Rest API**
+Copy **Org JWT**
+![image](https://github.com/user-attachments/assets/f4e75135-e605-4e7e-ba5f-475253a44ce8)
+
+
+**On Tines**
+Click on **New** and select **text**
+![image](https://github.com/user-attachments/assets/98dc560c-d2b2-4d69-956e-2dfc6f56556b)
+
+Paste the JWT in value.
+For URL: *.limacharlie.io
+And Save it.
+
+Now we have our credentials.
+![image](https://github.com/user-attachments/assets/8112b81a-d774-473c-b196-a436a0c2573b)
+
+
+**Back to our storyboard tab and refresh**
+On credentials press connect for **LimaCharlie**
+![image](https://github.com/user-attachments/assets/07a8d987-6706-4a5b-92dd-32ebaec12752)
+
+Now **LimaCharlie** Credentials are added.
+
+![image](https://github.com/user-attachments/assets/0bc9feae-e8fb-4605-b059-a42fecb23213)
+
+
+**On LimaCharlie**
+Select **Sensor**
+In Network Access section it is shown **Isolate From Network** for **Allowed**
+
+
+ **On Tines**
+ So lets go to our play book and re run it.
+ Select **Yes** in isolate the pc and submit.
+
+![image](https://github.com/user-attachments/assets/3b0a02d2-5aff-4d45-8f2c-c9c909343bce)
+
+
+**On LimaCharlie**
+Select **Sensor**
+In Network Access section it is shown **Isolated** and it shows the option to **Rejoin Network**
+![image](https://github.com/user-attachments/assets/0acd3e7e-3530-4b7d-97a2-53016ca57c12)
+
+
+**On Infected system**
+We need to check if the infected system is actually disconnected from the network or not.
+Open powershell and try to ping, we will not be able to ping.
+It shows **General failure**
+![image](https://github.com/user-attachments/assets/2c9d684a-8bb8-4dc3-9ced-9b41244ac1ab)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
