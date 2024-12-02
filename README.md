@@ -185,7 +185,7 @@ It has many information, which will be useful in generating a detection the rule
 
 ![image](https://github.com/user-attachments/assets/e2b32e59-088f-4327-8322-a50e1a7ccef0)
 
-We don’t need to build a rule from scrath.
+We don’t need to build a rule from scratch.
 - Goto github and find the [code](https://github.com/refractionPOINT/rules/blob/master/Sigma/dr_rules/windows_process_creation/win_process_creation_bitsadmin_download.yml)
 - Click on RAW and copy the rules.
 
