@@ -712,7 +712,75 @@ Open powershell and ping again.
  Start endless ping on computer and do the process again.
 
  
- Goto webhook and re-emit
+ Goto webhook and re-emit.
+ Goto user prompt and select yes.
+
+ The sensor will get isolated in **LimaCharlie.**
+ ![image](https://github.com/user-attachments/assets/9013c4ca-521b-4951-be33-b95f50b42e72)
+
+Now lets check our host.
+![image](https://github.com/user-attachments/assets/ce05a586-3c0e-43dd-9e25-11c8ea60079b)
+
+When we clickd **Yes** on isolate it starts general failure on our host.
+
+Now we are at the end.  looking at the workflow.
+
+<img width="577" alt="image" src="https://github.com/user-attachments/assets/94fac655-0b6e-4263-b4be-cb807247d0b5">
+
+Once the user select yes. LimaCharlie will isolate the system and send a message to Slack **(The computer has been isolated)**
+
+Create a new **LimaCharlie** template and select **Get Isolation Status**
+![image](https://github.com/user-attachments/assets/00cc6b4e-f4cd-426c-8e26-c83892bd418e)
+
+Connect it to **Isolate Sensor**
+Select the path to **sensor id** in url.
+![image](https://github.com/user-attachments/assets/cad4e2d5-24e3-46f7-b91a-701003fca2a4)
+
+And we need to change the credential.
+![image](https://github.com/user-attachments/assets/b232e4e8-d0ab-416a-9fdf-cf857fc6957b)
+Click on Connect.
+
+
+Go to **sensor id** and test it.
+Select **Slack** and goto its message section. Select **get isolation status > body > is_isolated** path.
+![image](https://github.com/user-attachments/assets/5e664283-ebea-4f7b-9405-3f2cec8c212a)
+
+If the result shows **null** re-run the playbook again. The result should say **true**
+
+## Testing 1 more time
+
+Goto webhook event and re-emit.
+We got a slack messge and a email.
+![image](https://github.com/user-attachments/assets/246e1bbc-c2b9-4c46-9932-2d56864f57d0)
+![image](https://github.com/user-attachments/assets/3caacdfd-d042-4983-b832-d7ca9df2ea02)
+
+On user prompt
+Run the event and select **Yes** and submit.
+![image](https://github.com/user-attachments/assets/37b9df66-d15f-454f-b6eb-a4e6b170302e)
+
+Goto **Slack**
+We got a isolation message.
+![image](https://github.com/user-attachments/assets/0db85605-22f9-4de3-8bc5-1edeaffc2954)
+
+## Conclusion
+Our playbook is working
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
 
 
 
