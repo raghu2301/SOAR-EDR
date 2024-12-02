@@ -762,8 +762,19 @@ Goto **Slack**
 We got a isolation message.
 ![image](https://github.com/user-attachments/assets/0db85605-22f9-4de3-8bc5-1edeaffc2954)
 
+
+Goto **LimaCharlie**
+Network Access shows Isloated.
+![image](https://github.com/user-attachments/assets/fda6a0d9-253b-4db7-943f-7180225d3244)
+
+Goto **Host**
+Ping starts to show general failure
+
+![image](https://github.com/user-attachments/assets/5cf7b8b4-4df3-4c8b-a54a-346a264254a7)
+
 ## Conclusion
-Our playbook is working
+Our playbook is working properly as per the workflow.
+SOAR and EDR are complementary technologies that strengthen an organization’s cybersecurity capabilities. While EDR ensures robust endpoint security, SOAR amplifies its impact by integrating, automating, and orchestrating responses across the entire security stack. Together, they help organizations defend against increasingly sophisticated cyber threats.
 
 
 
