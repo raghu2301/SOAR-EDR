@@ -673,7 +673,9 @@ In Network Access section it is shown **Isolate From Network** for **Allowed**
 
 
  **On Tines**
+ 
  So lets go to our play book and re run it.
+ 
  Select **Yes** in isolate the pc and submit.
 
 ![image](https://github.com/user-attachments/assets/3b0a02d2-5aff-4d45-8f2c-c9c909343bce)
@@ -692,22 +694,25 @@ It shows **General failure**
 ![image](https://github.com/user-attachments/assets/2c9d684a-8bb8-4dc3-9ced-9b41244ac1ab)
 
 
+**On LimaCharlie**
+Rejoin the network
+![image](https://github.com/user-attachments/assets/8f3444b8-fd68-424f-b13d-ebe571fe40d4)
+
+Status changes to **Allowed**
+![image](https://github.com/user-attachments/assets/c86b7467-b98a-4453-a8fb-90580f444790)
 
 
+**On Infected System**
+Open powershell and ping again.
+![image](https://github.com/user-attachments/assets/e1dedd08-0bf3-4b66-b716-998cb7bbb270)
 
+ We are able to ping this time.
 
+ Now lets try this process again.
+ Start endless ping on computer and do the process again.
 
-
-
-
-
-
-
-
-
-
-
-
+ 
+ Goto webhook and re-emit
 
 
 
