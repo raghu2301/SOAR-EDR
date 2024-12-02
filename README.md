@@ -78,12 +78,12 @@ This is the basic workflow which we will be working in this project<
 
 1. Goto LimaCharlie [website]( https://limacharlie.io/) 
 ![image](https://github.com/user-attachments/assets/b4d85cd3-a333-43fd-888c-4ce39ab23374)
-</br>
 
-2. Click on **Log In** and sign up
+
+3. Click on **Log In** and sign up
 
 ![image](https://github.com/user-attachments/assets/9ba37dd7-f638-48ec-8f33-15056f283e1f)
-</br>
+
 </br>
 
 3. After Log In **Create Organization**
@@ -140,7 +140,7 @@ replace **LimaCharlie.exe** with the name of executable file.
 Click it to see more details
 
  ![image](https://github.com/user-attachments/assets/c4ccb573-927b-4ab2-af41-6b699d15a565)
-</br>
+
 </br>
 </br>
 
@@ -177,36 +177,36 @@ Click it to see more details
 ![image](https://github.com/user-attachments/assets/b56b159f-fa6c-4b24-805d-778d74afd931)
 
  It has many information, which will be useful in generating a detection the rule.
- </br>
+ 
 ![image](https://github.com/user-attachments/assets/254f1c96-a788-46bb-81c1-a9c13c76f385)
-</br>
+
 - Open a new tab
 - Select our organization > Automation > D&R Rules > Create custom Rule.
-</br>
+
 ![image](https://github.com/user-attachments/assets/e2b32e59-088f-4327-8322-a50e1a7ccef0)
-</br>
+
 We don’t need to build a rule from scrath.
 - Goto github and find the [code](https://github.com/refractionPOINT/rules/blob/master/Sigma/dr_rules/windows_process_creation/win_process_creation_bitsadmin_download.yml)
 - Click on RAW and copy the rules.
-</br>
+
 ![image](https://github.com/user-attachments/assets/90a9623e-c859-4812-9a32-49c80b46ceb9)
-</br>
+
 - Head back to the rules.
 - Create a new rule and paste it.
-</br>
+  
 ![image](https://github.com/user-attachments/assets/90a556a2-b308-440f-ae75-b86438e60cc4)
-</br>
+
 - We can see a **detect** and **respond** section in what we have copied.
   This essentially signifies two blocks.
   Starting from **respond** select all the text and cut paste it to the **respond** block.
- </br>
+
 ![image](https://github.com/user-attachments/assets/4056c1cf-b088-4078-997b-b389c0414d3c)
-</br>
+
 Remove  the text **respond** from **respond block** and **detect** from **detect block.**
 As it is just to specify the blocks.
-</br>
+
 ![image](https://github.com/user-attachments/assets/3d3d290a-7b2c-4f86-b121-7fcaabdd37ae)
-</br>
+
 Here:
 
 **event:** specifies the event type, this process will only trigger if there is a new process or existing process.
@@ -222,7 +222,7 @@ path   event/FILE_PATH
 value lazagne.
 
 ![image](https://github.com/user-attachments/assets/03e0981b-3f66-4f89-83b1-c4e210f97593)
-</br>
+
 Here is the rule created for **detect** section
 ```
  events:
@@ -270,20 +270,20 @@ Rule for **respond** section.
 The best thing of **LimaCharlie** is that we can test the configuration.
 
 Copy the event by clicking on copy event.
-</br>
+
 ![image](https://github.com/user-attachments/assets/bca7845e-75b0-4a45-b589-5fdeece72495)
-</br>
+
 Scroll down and goto target event.
-</br>
+
 <img width="569" alt="image" src="https://github.com/user-attachments/assets/fdf7196a-6936-424d-87d0-c7d8cd568ba0">
-</br>
+
 Paste the copied event, and click on test event.
-</br>
+
 ![image](https://github.com/user-attachments/assets/9bee29ed-2513-43ff-9028-246558192420)
-</br>
+
 Goto detection.
 Here we can see our events generated.
-</br>
+
 ![image](https://github.com/user-attachments/assets/ad847bad-3818-45b4-8a82-ceab3c900c68)
 </br>
 </br>
