@@ -173,10 +173,10 @@ Click it to see more details
 - Select the **sensor** (host)
 - Select **Timeline**
 - Search **laZagne**
-</br>
+
 ![image](https://github.com/user-attachments/assets/b56b159f-fa6c-4b24-805d-778d74afd931)
 
- It has many information, which will be useful in generating a detection the rule.
+It has many information, which will be useful in generating a detection the rule.
  
 ![image](https://github.com/user-attachments/assets/254f1c96-a788-46bb-81c1-a9c13c76f385)
 
@@ -224,6 +224,7 @@ value lazagne.
 ![image](https://github.com/user-attachments/assets/03e0981b-3f66-4f89-83b1-c4e210f97593)
 
 Here is the rule created for **detect** section
+
 ```
  events:
   - NEW_PROCESS
@@ -251,9 +252,9 @@ Here is the rule created for **detect** section
       value: '1c84c8632c5269f24876ed9f49fa810b49f77e1e92e8918fc164c34b020f9a94'
 
 ```
+
 ![image](https://github.com/user-attachments/assets/13d0711b-96f5-4360-b72c-5865128ac3a9)
 
-</br>
 Rule for **respond** section.
 ```
 - action: report
@@ -266,7 +267,7 @@ Rule for **respond** section.
   name: raghu2301 - hacktool - Lazagne (SOAR-EDR)
 
 ```
-</br>
+
 The best thing of **LimaCharlie** is that we can test the configuration.
 
 Copy the event by clicking on copy event.
@@ -285,7 +286,7 @@ Goto detection.
 Here we can see our events generated.
 
 ![image](https://github.com/user-attachments/assets/ad847bad-3818-45b4-8a82-ceab3c900c68)
-</br>
+
 </br>
 </br>
 
@@ -299,99 +300,99 @@ Here we can see our events generated.
 - Goto [Slack website]( https://slack.com/intl/en-in)
 - Click on **Get Started**
 - Signup
-</br>
+
 ![image](https://github.com/user-attachments/assets/0fe40272-557e-46da-9a70-810de5269550)
-</br>
+
 - Click on **Create a workspace.**
-</br>
+
 ![image](https://github.com/user-attachments/assets/7fdfec15-b76c-4239-866e-f821a2fe7b86)
-</br>
+
 - Fill the name.
-</br>
+
 ![image](https://github.com/user-attachments/assets/d9452e0b-5204-44ee-b123-05b70100f79e)
-</br>
+
 - Add the emails of your colleagues who are in your team or you can skip if you dont want to add anyone.
-</br>
+
 ![image](https://github.com/user-attachments/assets/50d89630-dc86-44a0-9caa-a3fd8f93024e)
-</br>
+
 - Name the project you are working on.
-</br>
+
 ![image](https://github.com/user-attachments/assets/445dd01b-00aa-4bed-bf1c-a1fe1e07705d)
-</br>
+
 - Click on **Start with free.**
-</br>
+
 ![image](https://github.com/user-attachments/assets/71223f74-4541-4a3b-a888-5a597c7077dd)
-</br>
+
 - Create a new channel.
-</br>
+
 ![image](https://github.com/user-attachments/assets/545d6d7a-2fca-4bc0-a20a-9d5257d6daec)
-</br>
+
 - Choose the visibility of your channel.
-</br>
+
 ![image](https://github.com/user-attachments/assets/3295e028-8e4e-48bd-a73c-46da5e99030f)
-</br>
+
 ![image](https://github.com/user-attachments/assets/2b7e1d93-03cb-437e-b559-8df99573a15e)
-</br>
+
 On left side we have a channel called alerts which I have created.
 When we receive a detection from **LimaCharlie** on **Tines**. **Tines** will then send a message to **Slack** specifically within the alerts channel. Because as a **SOC Analyst** we would want to have a different channel and we want to have a dedicated channel for our alerts.
 </br>
-</br>
+
 ## Setting up Tines
 - Headover to [Tines website](https://www.tines.com/)
 - Sign up if you are using it for first time.
-</br>
+
 ![image](https://github.com/user-attachments/assets/e7bfc6ea-0974-44e4-be60-b8cd9c813171)
-</br>
+
 - Click on Tines icon and create a New Story by clicking on **New.**
-</br>
+
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/8476f791-a61b-40d6-b3bf-78a35ac9e722">
-</br>
+
 
 **Establishing connection**
-</br>
+
 Establish a link between **LimaCharlie** and **Tines** So that we can know **Tines** is retrieving the detection.
 For that we will be using **webhook.**
-</br>
+
 **In Tines**
 - Click and drag **Webhook** from the left side to the story board.
 - Copy the **Webhook url**
-</br>
+
 ![image](https://github.com/user-attachments/assets/1e9c8f36-52d2-46fa-95f5-890f761eb97f)
-</br>
+
 **In LimaCharlie**
 - Goto outputs.
-</br>
+
 ![image](https://github.com/user-attachments/assets/ec0b47e8-0604-4bba-8ae4-8496385b97fd)
-</br>
+
 - Add output.
-</br>
+
 ![image](https://github.com/user-attachments/assets/c9977f9e-50b3-4dc4-84fe-e1154b8eb594)
-</br>
+
 There are lot of option like events, detection, deployment etc.
 - We are interested in detection.
-</br>
+
 ![image](https://github.com/user-attachments/assets/75dda903-e387-48aa-96b9-f7dc6fc90715)
-</br>
+
 - Select **Tines**
-</br>
+
 ![image](https://github.com/user-attachments/assets/02c3c2e0-ae93-4ded-a9f7-f304dd5470df)
-</br>
+
 - Name it and paste the link of the webhook on destination host and save output.
-</br>
+
 ![image](https://github.com/user-attachments/assets/6894e1d3-de38-46d6-bf09-259d71669bd1)
-</br>
+
 Our configuration is complete.
-</br>
+
 **Move to Tines**
 - Select **Webhook**
 - Click on **Events**
-</br>
+
 ![image](https://github.com/user-attachments/assets/29618191-b5f6-43da-ade3-8cb0e521f66b)
-</br>
+
 Select the recent event and expand the body. We have our detection exactly one to one as **LimaCharlie**
-</br>
+
 ![image](https://github.com/user-attachments/assets/4103088f-07b1-409e-b7f2-ddc41bdb975f)
-</br>
+
 </br>
 </br>
 
@@ -407,9 +408,9 @@ It will contain a message **Isolate the machine(yes/no)**
 If we select **yes** then **LimaCharlie** should automatically isolate the machine.
 
 In the workflow.
-</br>
+
 ![image](https://github.com/user-attachments/assets/92ff2912-0c49-4ff6-9c05-33e1b8f114e2)
-</br>
+
 We have the infected host with the detect hack tool that **LimaCharlie** has detected.
 
 Which is pushed to **Tines.**
@@ -421,92 +422,95 @@ To create a link between **Tines** and **Slack**
 Goto **Slack** and look at the applications there.
 
 More > Automation > Search **Tines**
-</br>
+
 ![image](https://github.com/user-attachments/assets/d9d95fb8-e93f-444a-aed3-080845444345)
-</br>
+
 Click on add.
-</br>
+
 ![image](https://github.com/user-attachments/assets/687bca2c-2c70-4dfc-872e-dc0a1baafc5c)
-</br>
+
 Follow the steps mentioned.
-</br>
+
 ![image](https://github.com/user-attachments/assets/b3e4ac0c-b592-4981-8276-715416ef0383)
-</br>
+
 
 On **Tines**
 
 Click on Credentials and select Slack
-</br>
+
 ![image](https://github.com/user-attachments/assets/ed09142d-9c6e-4e93-8cb6-6fb7e61f84b8)
-</br>
+
 Click on **use tines app for slack.** and click on allow
-</br>
+
 ![image](https://github.com/user-attachments/assets/ab777095-2f03-48cb-8595-1ef032380102)
-</br>
+
 Goto templets and drag **Slack** into the storyboard.
-</br>
+
 ![image](https://github.com/user-attachments/assets/55b0c373-bf37-49e3-89ac-04eb3b97f9d1)
-</br>
+
 On right side search for message.
 And select **send a message.**
+
 ![image](https://github.com/user-attachments/assets/395a2055-4437-4b18-acbf-1340ec3f8509)
-</br>
+
 On **Slack**
 - Goto **alert** channel, which we have created.
 - Right Click on channel and select **View channel details**
-</br>
+
 ![image](https://github.com/user-attachments/assets/24f93de0-5040-4312-8800-9483956251e0)
-</br>
+
 - Scroll down and copy the **Channel ID**
+
 <img width="652" alt="image" src="https://github.com/user-attachments/assets/14ee0b6b-1916-496c-a907-d87e4de21d93">
 
 Move to **Tines**
 And paste the **Channel/User ID**
-</br>
+
 ![image](https://github.com/user-attachments/assets/bd6bdc27-4eff-47d1-9fdd-65057fe9ef54)
-</br>
+
 And type the message you want to send.
-</br>
+
 Now connect the **Webhook** to **Slack**
 And click on **Test**
-</br>
+
 ![image](https://github.com/user-attachments/assets/06c530e8-b1aa-4b07-be75-0909093ddf40)
-</br>
+
 Now got to **Slack** and see the message.
-</br>
+
 ![image](https://github.com/user-attachments/assets/42067678-b3f2-4c46-976d-60a183da5950)
-</br>
+
 The message is visible in **Slack**
 Now we are sure that **Tines** can communicate with **Slack.**
 </br>
 </br>
-</br>
+
 Now we need to send a **email.**
 
 Select **email** and drag it to the storyboard.
-</br>
+
 ![image](https://github.com/user-attachments/assets/2567ac72-0391-493d-946a-8d2815533e19)
-</br>
+
 Connect the **Webhook** to **Send email.**
 For testing I will be using temp mail.
 Enter email in **Recipients** and **Reply to**
 Click on **Test**
+
 ![image](https://github.com/user-attachments/assets/108c097c-78d2-465a-83fa-ffd97a65580f)
 
 Goto mail and check the mail.
-</br>
+
 ![image](https://github.com/user-attachments/assets/6392bf69-1a13-4f39-86d0-99c340d8400d)
+
 </br>
-</br>
-</br>
+
 Now we have to create a **Prompt** as per our workflow.
 
 For **Prompt** we can use **page** which is under tools.
 
 Drag **page** to the storyboard.
-</br>
+
 ![image](https://github.com/user-attachments/assets/2ce74cb9-0705-4e00-9152-90189c35d8a1)
-</br>
+
 
 Click on **Edit page.**
 
@@ -515,39 +519,39 @@ Lets include the details into the our messages.
 For interesting fields we will goto our **Webhook.**
 
 And expand detection > body
-</br>
+
 ![image](https://github.com/user-attachments/assets/0a309b6f-b297-44cb-8dc3-7f26c2729724)
-</br>
+
 Open notepad.
 Copy and paste the interesting fields.
 
 ![image](https://github.com/user-attachments/assets/a045044f-8a4a-4afc-9914-28bc78606fa6)
-</br>
+
 </br>
 Rearrange the fields according to needs.
 
 Copy the data from notepad and paste it on the message.
-</br>
+
 ![image](https://github.com/user-attachments/assets/7fdb466b-1a5e-4691-84ba-adafa387c43e)
-</br>
+
 Select the **page** and click on **Test**
 </br>
 **Move to Slack**
 We can see the message with all the details included.
-</br>
+
 ![image](https://github.com/user-attachments/assets/b2d37935-4657-456f-8cc2-a556bf256269)
-</br>
+
 These details are only know to us, but it is not know to others, so lets make it more user friendly.
 </br>
 So we go to our **notepad** again and add the description before the links.
-</br>
+
 ![image](https://github.com/user-attachments/assets/54b3f31a-33d1-4801-ab2c-b406d311f1fa)
-</br>
+
 
 Copy this and paste it again on the message, and replace the message which we had earlier.
-</br>
+
 ![image](https://github.com/user-attachments/assets/decafa67-bede-4326-8276-e49b04643fef)
-</br>
+
 Now we test it again.
 
 Move to Slack.
@@ -555,9 +559,9 @@ Move to Slack.
 Updated message will appear.
 
 This time the details have descriptions. So that everyone can understand.
-</br>
+
 ![image](https://github.com/user-attachments/assets/4c5ce8b2-0ba2-44a0-bd61-33d10dac9276)
-</br>
+
 </br>
 </br>
 </br>
@@ -571,27 +575,27 @@ Click on the **email** we created on the storyboard.
 Copy the details we have on the notepad and paste the message to the **body** of the email
 
 Select the mail and press the **Test**
-</br>
+
 ![image](https://github.com/user-attachments/assets/6b86fa08-753f-4c33-bc65-d7d16c75e40c)
-</br>
+
 Goto the **email** and check the mail.
-</br>
+
 ![image](https://github.com/user-attachments/assets/5368daa9-75b3-445c-93a0-1ac37c0f2adf)
-</br>
+
 We got the mail, but the formatting is not good.
 
 So we open the html editor of the messages and make changes to break the line.
-</br>
+
 ![image](https://github.com/user-attachments/assets/fbb48fc7-64d1-43b2-8faf-e96b960d9ad7)
-</br>
+
 And **test** the email again.
 
 And check the mail again.
 
 Now it looks good.
-</br>
+
 ![image](https://github.com/user-attachments/assets/47cc2866-577a-4058-9e14-af5652513eac)
-</br>
+
 </br>
 </br>
 <br>
@@ -602,56 +606,56 @@ Now we have to work on our user prompt.
 Does the user want to isolate the pc.
 
 Select user prompt and edit page.
-</br>
+
 ![image](https://github.com/user-attachments/assets/617efddb-5abb-48b5-9510-f4f83980855c)
-</br>
+
 Select Boolean an drag to the page.
-</br>
+
 ![image](https://github.com/user-attachments/assets/59092922-0e54-4609-b6b0-ebedb1a1e028)
-</br>
+
 Click on visit page on the **user prompt**
-</br>
+
 ![image](https://github.com/user-attachments/assets/9b4759a3-3ce3-4b4b-b043-ef33d363dcba)
-</br>
+
 If we click on **No** and submit.
 
 Now the user selects **no** *the computer was not isolated, please investigate* message was sent over to **Slack**
 We need to build our variable which in our case is computer name.
 Lets build that.
 Click **Trigger** and drag it to the storyboard.
-</br>
+
 ![image](https://github.com/user-attachments/assets/45dddb7f-d57c-4a10-8c52-fb6e83bb331d)
-</br>
+
 Change the name to **No** and connect it to the page.
 </br>
 Select **Rules** and click on **+** buttom
 Select User prompt > body > body > isolate
-</br>
+
 ![image](https://github.com/user-attachments/assets/a5bc2052-1cb5-435b-9f13-050bd53e17a0)
-</br>
+
 The **result** on lowe left corner shows **false**
 If it does not show **false** test again the page you will view the option.
 Click outside of the box to close it.
-</br>
+
 ![image](https://github.com/user-attachments/assets/960e24c4-3ccb-4d01-bc6c-ada4ff96e393)
-</br>
+
 Copy the **Slack message** from the storyboard and paste it on the storyboard to make a copy of it and edit the message.
-</br>
+
 ![image](https://github.com/user-attachments/assets/1c88a071-a2dc-48c0-b059-63822c718405)
-</br>
+
 Connect the **Trigger** to the **Slack message.**
 </br>
 Goto **user prompt** and test it
 Select **no** and press submit.
-</br>
+
 ![image](https://github.com/user-attachments/assets/576dbb34-74f4-496c-88b1-19f0a9e74b17)
-</br>
+
 
 We goto **Slack** and see the message.
 The message is showen it **Slack** it means our connection is working properly.
-</br>
+
 ![image](https://github.com/user-attachments/assets/6808d57b-1c9a-4f02-b1a3-9cd9fbcd985c)
-</br>
+
 Create another **Trigger**
 
 Re-run the test.
@@ -665,13 +669,13 @@ Expand user prompt.
 Expand body.
 
 This time we have selected **Yes**, so the *do_yo_want_to_isolate:* is showing **true**
-</br>
+
 ![image](https://github.com/user-attachments/assets/2e1a477a-1041-43ce-a3ed-b4eab08b7017)
-</br>
+
 Connect the **Trigger** to the **User Prompt**
-</br>
+
 ![image](https://github.com/user-attachments/assets/2cced159-ad60-475e-ad32-a061b61cfd29)
-</br>
+
 </br>
 Goto template and select **LimaCharlie** and drag it to storyboard.
 
@@ -680,9 +684,9 @@ Now the question is How will **LimaCharlie** will know which machine to isolate.
 Search **Isolate Sensor**
 
 Add the path of the **sid** in the URL section.
-</br>
+
 ![image](https://github.com/user-attachments/assets/af7620a4-eaa7-44c4-b795-507c015b0f9d)
-</br>
+
 The result shows **null**, so we need to re-run the playbook while being connected to the new application.
 </br>
 
@@ -692,18 +696,18 @@ Goto ***webhook** events and re-emit.
 Goto **User Prompt** and select **yes** and submit.
 
 We can see the error on **Isolate Sensor** we did not do any configuration other than changing the url.
-</br>
+
 ![image](https://github.com/user-attachments/assets/d344bc72-719d-43b3-b42f-bd1fb5142054)
-</br>
+
 Now if we click on the link we can see our sensor id  as a result at the bottom.
-</br>
+
 ![image](https://github.com/user-attachments/assets/6b8252d8-fa7a-4766-9ee8-3cd9f785912e)
-</br>
+
 </br>
 Authorization is looking for credentials that means we need to authenticate **LimaCharlie**
-</br>
+
 ![image](https://github.com/user-attachments/assets/785a030c-e213-451a-bb32-f6aae82cd2f9)
-</br>
+
 **For Credentials Authorization**
 
 Open **Tines** in new tab.
@@ -713,9 +717,9 @@ Click on credentials.
 Click on **New.**
 
 Search for **LimaCharlie.**
-</br>
+
 ![image](https://github.com/user-attachments/assets/61e80cf9-76c0-4399-bf42-86aa86053527)
-</br>
+
 Since **LimaCharlie** is not present here.
 
 We need to goto the **LimaCharlie**
@@ -723,16 +727,16 @@ We need to goto the **LimaCharlie**
 Click on **Access Management** and select **Rest API**
 
 Copy **Org JWT**
-</br>
+
 ![image](https://github.com/user-attachments/assets/f4e75135-e605-4e7e-ba5f-475253a44ce8)
-</br>
+
 
 **On Tines**
 
 Click on **New** and select **text**
-</br>
+
 ![image](https://github.com/user-attachments/assets/98dc560c-d2b2-4d69-956e-2dfc6f56556b)
-</br>
+
 Paste the JWT in value.
 
 For URL: *.limacharlie.io
@@ -740,20 +744,20 @@ For URL: *.limacharlie.io
 And Save it.
 
 Now we have our credentials.
-</br>
+
 ![image](https://github.com/user-attachments/assets/8112b81a-d774-473c-b196-a436a0c2573b)
-</br>
+
 
 **Back to our storyboard tab and refresh**
 
 On credentials press connect for **LimaCharlie**
-</br>
+
 ![image](https://github.com/user-attachments/assets/07a8d987-6706-4a5b-92dd-32ebaec12752)
-</br>
+
 Now **LimaCharlie** Credentials are added.
-</br>
+
 ![image](https://github.com/user-attachments/assets/0bc9feae-e8fb-4605-b059-a42fecb23213)
-</br>
+
 
 **On LimaCharlie**
 
@@ -767,18 +771,18 @@ In Network Access section it is shown **Isolate From Network** for **Allowed**
  So lets go to our play book and re run it.
  
  Select **Yes** in isolate the pc and submit.
-</br>
+
 ![image](https://github.com/user-attachments/assets/3b0a02d2-5aff-4d45-8f2c-c9c909343bce)
-</br>
+
 
 **On LimaCharlie**
 
 Select **Sensor**
 
 In Network Access section it is shown **Isolated** and it shows the option to **Rejoin Network**
-</br>
+
 ![image](https://github.com/user-attachments/assets/0acd3e7e-3530-4b7d-97a2-53016ca57c12)
-</br>
+
 
 **On Infected system**
 
@@ -787,153 +791,106 @@ We need to check if the infected system is actually disconnected from the networ
 Open powershell and try to ping, we will not be able to ping.
 
 It shows **General failure**
-</br>
+
 ![image](https://github.com/user-attachments/assets/2c9d684a-8bb8-4dc3-9ced-9b41244ac1ab)
-</br>
+
 
 **On LimaCharlie**
 Rejoin the network.
-</br>
+
 ![image](https://github.com/user-attachments/assets/8f3444b8-fd68-424f-b13d-ebe571fe40d4)
-</br>
+
 Status changes to **Allowed**
-</br>
+
 ![image](https://github.com/user-attachments/assets/c86b7467-b98a-4453-a8fb-90580f444790)
-</br>
+
 
 **On Infected System**
 
 Open powershell and ping again.
-</br>
-![image](https://github.com/user-attachments/assets/e1dedd08-0bf3-4b66-b716-998cb7bbb270)
-</br>
- We are able to ping this time.
 
- Now lets try this process again.
- Start endless ping on computer and do the process again.
+![image](https://github.com/user-attachments/assets/e1dedd08-0bf3-4b66-b716-998cb7bbb270)
+
+We are able to ping this time.
+
+Now lets try this process again.
+Start endless ping on computer and do the process again.
 
  
- Goto webhook and re-emit.
- Goto user prompt and select yes.
+Goto webhook and re-emit.
+Goto user prompt and select yes.
 
- The sensor will get isolated in **LimaCharlie.**
-</br>
- ![image](https://github.com/user-attachments/assets/9013c4ca-521b-4951-be33-b95f50b42e72)
-</br>
+The sensor will get isolated in **LimaCharlie.**
+
+![image](https://github.com/user-attachments/assets/9013c4ca-521b-4951-be33-b95f50b42e72)
+
 Now lets check our host.
-</br>
+
 ![image](https://github.com/user-attachments/assets/ce05a586-3c0e-43dd-9e25-11c8ea60079b)
-</br>
+
 When we clickd **Yes** on isolate it starts general failure on our host.
 
 Now we are at the end. Looking at the workflow.
-</br>
+
 <img width="577" alt="image" src="https://github.com/user-attachments/assets/94fac655-0b6e-4263-b4be-cb807247d0b5">
-</br>
+
 Once the user select yes. LimaCharlie will isolate the system and send a message to Slack **(The computer has been isolated)**
 
 Create a new **LimaCharlie** template and select **Get Isolation Status**
-</br>
+
 ![image](https://github.com/user-attachments/assets/00cc6b4e-f4cd-426c-8e26-c83892bd418e)
-</br>
+
 Connect it to **Isolate Sensor**
 Select the path to **sensor id** in url.
-</br>
+
 ![image](https://github.com/user-attachments/assets/cad4e2d5-24e3-46f7-b91a-701003fca2a4)
-</br>
+
 And we need to change the credential.
-</br>
+
 ![image](https://github.com/user-attachments/assets/b232e4e8-d0ab-416a-9fdf-cf857fc6957b)
-</br>
+
 Click on Connect.
 
 
 Go to **sensor id** and test it.
 Select **Slack** and goto its message section. Select **get isolation status > body > is_isolated** path.
-</br>
+
 ![image](https://github.com/user-attachments/assets/5e664283-ebea-4f7b-9405-3f2cec8c212a)
-</br>
+
 If the result shows **null** re-run the playbook again. The result should say **true**
 
 ## Testing 1 more time
 
 Goto webhook event and re-emit.
 We got a slack messge and a email.
-</br>
+
 ![image](https://github.com/user-attachments/assets/246e1bbc-c2b9-4c46-9932-2d56864f57d0)
-</br>
+
 ![image](https://github.com/user-attachments/assets/3caacdfd-d042-4983-b832-d7ca9df2ea02)
-</br>
+
 On user prompt
 Run the event and select **Yes** and submit.
-</br>
+
 ![image](https://github.com/user-attachments/assets/37b9df66-d15f-454f-b6eb-a4e6b170302e)
 
 Goto **Slack**
 
 We got a isolation message.
-</br>
+
 ![image](https://github.com/user-attachments/assets/0db85605-22f9-4de3-8bc5-1edeaffc2954)
-</br>
 
 Goto **LimaCharlie**
 
 Network Access shows Isloated.
-</br>
+
 ![image](https://github.com/user-attachments/assets/fda6a0d9-253b-4db7-943f-7180225d3244)
-</br>
+
 Goto **Host**
 
 Ping starts to show general failure
-</br>
+
 ![image](https://github.com/user-attachments/assets/5cf7b8b4-4df3-4c8b-a54a-346a264254a7)
-</br>
+
 ## Conclusion
 Our playbook is working properly as per the workflow.
 SOAR and EDR are complementary technologies that strengthen an organization’s cybersecurity capabilities. While EDR ensures robust endpoint security, SOAR amplifies its impact by integrating, automating, and orchestrating responses across the entire security stack. Together, they help organizations defend against increasingly sophisticated cyber threats.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
