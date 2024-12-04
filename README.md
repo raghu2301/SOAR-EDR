@@ -491,8 +491,11 @@ Select **email** and drag it to the storyboard.
 ![image](https://github.com/user-attachments/assets/2567ac72-0391-493d-946a-8d2815533e19)
 
 Connect the **Webhook** to **Send email.**
+
 For testing I will be using temp mail.
+
 Enter email in **Recipients** and **Reply to**
+
 Click on **Test**
 
 ![image](https://github.com/user-attachments/assets/108c097c-78d2-465a-83fa-ffd97a65580f)
@@ -522,7 +525,7 @@ And expand detection > body
 
 ![image](https://github.com/user-attachments/assets/0a309b6f-b297-44cb-8dc3-7f26c2729724)
 
-Open notepad.
+**Open notepad.**
 Copy and paste the interesting fields.
 
 ![image](https://github.com/user-attachments/assets/a045044f-8a4a-4afc-9914-28bc78606fa6)
@@ -554,7 +557,7 @@ Copy this and paste it again on the message, and replace the message which we ha
 
 Now we test it again.
 
-Move to Slack.
+Move to **Slack.**
 
 Updated message will appear.
 
@@ -628,7 +631,7 @@ Click **Trigger** and drag it to the storyboard.
 
 Change the name to **No** and connect it to the page.
 </br>
-Select **Rules** and click on **+** buttom
+Select **Rules** and click on **+** button
 Select User prompt > body > body > isolate
 
 ![image](https://github.com/user-attachments/assets/a5bc2052-1cb5-435b-9f13-050bd53e17a0)
@@ -645,7 +648,7 @@ Copy the **Slack message** from the storyboard and paste it on the storyboard to
 
 Connect the **Trigger** to the **Slack message.**
 </br>
-Goto **user prompt** and test it
+Goto **user prompt** and test it.
 Select **no** and press submit.
 
 ![image](https://github.com/user-attachments/assets/576dbb34-74f4-496c-88b1-19f0a9e74b17)
@@ -676,7 +679,7 @@ Connect the **Trigger** to the **User Prompt**
 
 ![image](https://github.com/user-attachments/assets/2cced159-ad60-475e-ad32-a061b61cfd29)
 
-</br>
+
 Goto template and select **LimaCharlie** and drag it to storyboard.
 
 Now the question is How will **LimaCharlie** will know which machine to isolate.
@@ -691,7 +694,7 @@ The result shows **null**, so we need to re-run the playbook while being connect
 </br>
 
 
-Goto ***webhook** events and re-emit.
+Goto **webhook** events and re-emit.
 
 Goto **User Prompt** and select **yes** and submit.
 
@@ -703,7 +706,7 @@ Now if we click on the link we can see our sensor id  as a result at the bottom.
 
 ![image](https://github.com/user-attachments/assets/6b8252d8-fa7a-4766-9ee8-3cd9f785912e)
 
-</br>
+
 Authorization is looking for credentials that means we need to authenticate **LimaCharlie**
 
 ![image](https://github.com/user-attachments/assets/785a030c-e213-451a-bb32-f6aae82cd2f9)
@@ -765,7 +768,7 @@ Select **Sensor**
 
 In Network Access section it is shown **Isolate From Network** for **Allowed**
 
-</br>
+
  **On Tines**
  </br>
  So lets go to our play book and re run it.
